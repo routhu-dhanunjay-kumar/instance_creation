@@ -16,6 +16,7 @@ provider "aws" {
 resource "aws_instance" "this" {
   count=var.no_of_vms
   ami                  = var.ami
+  vpc_security_group_ids = var.vpc_security_group_ids
   associate_public_ip_address = var.associate_public_ip_address
   availability_zone      = var.availability_zone
   cpu_core_count       = var.cpu_core_count
