@@ -171,8 +171,7 @@ variable "ipv6_addresses" {
 variable "key_name" {
   description = "Key name of the Key Pair to use for the instance; which can be managed using the `aws_key_pair` resource"
   type        = string
-  default     = null
-}
+ }
 
 variable "launch_template" {
   description = "Specifies a Launch Template to configure the instance. Parameters configured on this resource will override the corresponding parameters in the Launch Template"
